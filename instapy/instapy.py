@@ -1768,7 +1768,9 @@ class InstaPy:
                         #else:
                         #    web_address_navigator(self.browser, link)
 
-                        sleep(10)        
+                        sleep(5) 
+                        self.browser.refresh()
+                        sleep(5)
                         # try to like
                         like_state, msg = like_image(self.browser,
                                                      user_name,
