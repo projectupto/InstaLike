@@ -24,27 +24,31 @@ from instapy import InstaPy
 from instapy.util import smart_run
 
 # login credentials
-insta_username = 'wendyhufox'
-insta_password = 'jiuweihu54321'
+insta_username = 'prestonwucong'
+insta_password = 'anquandemima99'
 
 # get an InstaPy session!
 # set headless_browser=True to run InstaPy in the background
 session = InstaPy(username=insta_username,
                   password=insta_password,
-                  headless_browser=True)
+                  headless_browser=False)
 
 with smart_run(session):
     while True:
        cur = time.time()
-
+      
+       time.sleep(10)
        session.like_by_tags(['Fitness'], amount=1, interact=False)
        time.sleep(10)
 
+       time.sleep(10)              
        session.like_by_tags(['Gym'], amount=1, interact=False)
        time.sleep(10)
 
+       time.sleep(10)
        session.like_by_tags(['Bodybuilding'], amount=1, interact=False)
        time.sleep(10)
 
+       time.sleep(10)
        session.like_by_tags(['fit'], amount=1, interact=False)
-       time.sleep(20)
+       time.sleep(10)
