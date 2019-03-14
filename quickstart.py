@@ -31,24 +31,24 @@ insta_password = 'anquandemima99'
 # set headless_browser=True to run InstaPy in the background
 session = InstaPy(username=insta_username,
                   password=insta_password,
-                  headless_browser=False)
+                  headless_browser=True)
 
 with smart_run(session):
     while True:
        cur = time.time()
       
        time.sleep(10)
-       session.like_by_tags(['Fitness'], amount=1, interact=False)
+       session.like_by_tags(['love'], amount=1, interact=False)
        time.sleep(10)
 
        time.sleep(10)              
-       session.like_by_tags(['Gym'], amount=1, interact=False)
+       session.like_by_tags(['instagood'], amount=1, interact=False)
        time.sleep(10)
 
        time.sleep(10)
-       session.like_by_tags(['Bodybuilding'], amount=1, interact=False)
+       session.like_by_tags(['photooftheday'], amount=1, interact=False)
        time.sleep(10)
 
        time.sleep(10)
-       session.like_by_tags(['fit'], amount=1, interact=False)
+       session.like_by_tags(['fashion'], amount=1, interact=False)
        time.sleep(10)
