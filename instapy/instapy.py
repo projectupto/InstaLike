@@ -193,7 +193,7 @@ class InstaPy:
         self.smart_hashtags = []
         self.smart_location_hashtags = []
 
-        self.dont_like = ['sex', 'nsfw']
+        self.dont_like = ['nsfw']
         self.mandatory_words = []
         self.ignore_if_contains = []
         self.ignore_users = []
