@@ -22,15 +22,21 @@ import time
 import logging
 from instapy import InstaPy
 from instapy.util import smart_run
+from proxy_extension import create_proxy_extension
 
 # login credentials
-insta_username = 'prestonwucong'
-insta_password = 'anquandemima99'
+insta_username = 'super_cool_star'
+insta_password = 'jackychen8'
+
+proxy = 'lum-customer-hl_648f8412-zone-static-ip-185.217.61.22:9y4lv38oag4e@zproxy.lum-superproxy.io:22225'
+proxy_chrome_extension = create_proxy_extension(proxy)
 
 # get an InstaPy session!
 # set headless_browser=True to run InstaPy in the background
 session = InstaPy(username=insta_username,
                   password=insta_password,
+                  proxy_chrome_extension=proxy_chrome_extension, 
+                  nogui=False,
                   headless_browser=True)
 
 with smart_run(session):
